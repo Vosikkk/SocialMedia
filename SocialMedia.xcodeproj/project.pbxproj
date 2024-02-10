@@ -25,6 +25,8 @@
 		3865876F2B72EA3B002D309C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3865876E2B72EA3B002D309C /* FirebaseStorage */; };
 		386587712B72EDC7002D309C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386587702B72EDC7002D309C /* User.swift */; };
 		386587732B72F862002D309C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386587722B72F862002D309C /* LoadingView.swift */; };
+		38DE5AC92B781BCF008C5B30 /* CreateNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE5AC82B781BCF008C5B30 /* CreateNewPost.swift */; };
+		38DE5ACB2B781C1D008C5B30 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DE5ACA2B781C1D008C5B30 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		386587672B7266AA002D309C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		386587702B72EDC7002D309C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		386587722B72F862002D309C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		38DE5AC82B781BCF008C5B30 /* CreateNewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPost.swift; sourceTree = "<group>"; };
+		38DE5ACA2B781C1D008C5B30 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 				384E13052B7590A200AB5C1E /* MainView.swift */,
 				384E13072B75924300AB5C1E /* ProfileView.swift */,
 				384E13092B759E9A00AB5C1E /* ReusableProfileContent.swift */,
+				38DE5AC82B781BCF008C5B30 /* CreateNewPost.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				386587702B72EDC7002D309C /* User.swift */,
+				38DE5ACA2B781C1D008C5B30 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,7 +241,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				386587712B72EDC7002D309C /* User.swift in Sources */,
+				38DE5AC92B781BCF008C5B30 /* CreateNewPost.swift in Sources */,
 				384E13082B75924300AB5C1E /* ProfileView.swift in Sources */,
+				38DE5ACB2B781C1D008C5B30 /* Post.swift in Sources */,
 				384E130A2B759E9A00AB5C1E /* ReusableProfileContent.swift in Sources */,
 				384E13062B7590A200AB5C1E /* MainView.swift in Sources */,
 				386587682B7266AA002D309C /* LoginView.swift in Sources */,
