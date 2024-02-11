@@ -19,7 +19,7 @@ struct CreateNewPost: View {
     @State private var postImageData: Data?
     
     /// - Strored User Data From Userefaults(AppStorage)
-    @AppStorage("user_profile_url") private var profileURL: URL?
+    @AppStorage("user_prrofile_url") private var profileURL: URL?
     @AppStorage("usre_name") private var userName: String = ""
     @AppStorage("usr_UID") private var userUID: String = ""
     
@@ -139,6 +139,10 @@ struct CreateNewPost: View {
         .alert(errorMessage, isPresented: $showError) {
             
         }
+        /// - Loading View
+        .overlay {
+            LoadingView(show: $isLoading)
+        }
     }
     
     // MARK: - Post Content To Firebase
@@ -153,12 +157,32 @@ struct CreateNewPost: View {
                 let imageReferanceID = "\(userUID)\(Date())"
                 let storageRef = Storage.storage().reference().child("Post_Images").child(imageReferanceID)
                 if let postImageData {
+                    let _ = try await storageRef.putDataAsync(postImageData)
+                    let downloadURL = try await storageRef.downloadURL()
+                    
+                    /// Step 3: Create Post Object With Image Id and URL
+                    let post = Post(text: postText, imageURL: downloadURL, imageReferenceID: imageReferanceID, userName: userName, userUID: userUID, userProfileURL: profileURL)
+                    try await createDocumentAtFirebase(post)
                     
                 } else {
-                    
+                    /// Step 2: Directly Post Text Data to Firebase (Since tehre is no Image  Present)
+                    let post = Post(text: postText, userName: userName, userUID: userUID, userProfileURL: profileURL)
+                    try await createDocumentAtFirebase(post)
                 }
             } catch {
                 await setError(error)
+            }
+        }
+    }
+    
+    func createDocumentAtFirebase(_ post: Post) async throws {
+        /// Writing Doument to Firebase Firestore
+        let _ = try Firestore.firestore().collection("Posts").addDocument(from: post) { error in
+            if error == nil {
+                /// Post Successfully Stored at Firebase
+                isLoading = false
+                onPost(post)
+                dismiss()
             }
         }
     }

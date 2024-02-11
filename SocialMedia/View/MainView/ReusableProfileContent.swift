@@ -25,6 +25,7 @@ struct ReusableProfileContent: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 100, height: 100)
                     .clipShape(Circle())
+                    .padding(.horizontal, 6)
                     
                     VStack(alignment: .leading, spacing: 6) {
                         Text(user.username)
@@ -54,6 +55,7 @@ struct ReusableProfileContent: View {
                     .foregroundStyle(.black)
                     .hAlign(.leading)
                     .padding(.vertical, 15)
+                    .padding(.horizontal, 10)
             }
         }
     }
