@@ -19,9 +19,9 @@ struct CreateNewPost: View {
     @State private var postImageData: Data?
     
     /// - Strored User Data From Userefaults(AppStorage)
-    @AppStorage("user_prrofile_url") private var profileURL: URL?
-    @AppStorage("usre_name") private var userName: String = ""
-    @AppStorage("usr_UID") private var userUID: String = ""
+    @AppStorage("user_profile_url") private var profileURL: URL?
+    @AppStorage("user_name") private var userName: String = ""
+    @AppStorage("user_UID") private var userUID: String = ""
     
     /// - View Properties
     @Environment(\.dismiss) private var dismiss

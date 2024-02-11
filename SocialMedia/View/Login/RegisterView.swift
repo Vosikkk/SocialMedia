@@ -33,7 +33,7 @@ struct RegisterView: View {
     
     // MARK: - UserDefaults
     @AppStorage("log_status") var logStatus: Bool = false
-    @AppStorage("user_prrofile_url") var profileURL: URL?
+    @AppStorage("user_profile_url") var profileURL: URL?
     @AppStorage("user_name") var userNameStored: String = ""
     @AppStorage("user_UID") var userUID: String = ""
     

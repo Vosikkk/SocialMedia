@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		380F5F8D2B78F0B700B33996 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F5F8C2B78F0B700B33996 /* PostsView.swift */; };
+		380F5F8F2B78FA5C00B33996 /* ReusablePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F5F8E2B78FA5C00B33996 /* ReusablePostsView.swift */; };
+		380F5F912B79009600B33996 /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F5F902B79009500B33996 /* PostCardView.swift */; };
 		384E13012B758D3100AB5C1E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E13002B758D3100AB5C1E /* RegisterView.swift */; };
 		384E13042B758E2000AB5C1E /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E13032B758E2000AB5C1E /* View+Extension.swift */; };
 		384E13062B7590A200AB5C1E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E13052B7590A200AB5C1E /* MainView.swift */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		380F5F8C2B78F0B700B33996 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		380F5F8E2B78FA5C00B33996 /* ReusablePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusablePostsView.swift; sourceTree = "<group>"; };
+		380F5F902B79009500B33996 /* PostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
 		384E13002B758D3100AB5C1E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		384E13032B758E2000AB5C1E /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		384E13052B7590A200AB5C1E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				384E13092B759E9A00AB5C1E /* ReusableProfileContent.swift */,
 				38DE5AC82B781BCF008C5B30 /* CreateNewPost.swift */,
 				380F5F8C2B78F0B700B33996 /* PostsView.swift */,
+				380F5F8E2B78FA5C00B33996 /* ReusablePostsView.swift */,
+				380F5F902B79009500B33996 /* PostCardView.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -250,10 +256,12 @@
 				384E130A2B759E9A00AB5C1E /* ReusableProfileContent.swift in Sources */,
 				384E13062B7590A200AB5C1E /* MainView.swift in Sources */,
 				386587682B7266AA002D309C /* LoginView.swift in Sources */,
+				380F5F8F2B78FA5C00B33996 /* ReusablePostsView.swift in Sources */,
 				386587532B7263DC002D309C /* ContentView.swift in Sources */,
 				384E13012B758D3100AB5C1E /* RegisterView.swift in Sources */,
 				380F5F8D2B78F0B700B33996 /* PostsView.swift in Sources */,
 				386587732B72F862002D309C /* LoadingView.swift in Sources */,
+				380F5F912B79009600B33996 /* PostCardView.swift in Sources */,
 				384E13042B758E2000AB5C1E /* View+Extension.swift in Sources */,
 				386587512B7263DC002D309C /* SocialMediaApp.swift in Sources */,
 			);
